@@ -1,0 +1,90 @@
+body{
+    margin: 20%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.full-width {
+    font-size: 5vw;
+    text-align: center;
+}
+
+.float {
+    float: left;
+    margin-right: 5px;
+}
+
+.timeline{
+    float: left;
+    background-color: black;
+    width: 2px;
+    height: 100vh;
+    margin-right: 15px;
+}
+
+.timeline-dot{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(87, 90, 248);
+    border: 2px solid rgb(0, 204, 255);
+    border-radius: 50%;
+    z-index: 1;
+    
+}
+
+.timeline-data {
+    text-align: right;
+    background: blanchedalmond;
+    padding: 2px;
+    border: 2px solid coral;
+    border-radius: 10px;
+}
+
+.section > p, h3 {
+    width: 95%;
+    position:relative;
+    color: rgb(255, 255, 255);
+}
+
+.section-img {
+    background-image: url('coding.jpg');
+    filter: blur(8px);
+    height: 200px;
+    width: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border: 5px solid black;
+}
+
+.section-header {
+    position: absolute;
+    transform: translateY(-200px);
+}
+
+.section-text{
+    float: left;
+    position: absolute;
+    transform: translateY(-160px);
+}
+
+
+@media (max-width: 800px) {
+    body {
+        margin: 0%;
+    }
+
+    .section-text, .section-header {
+        margin: 3vw;
+    }
+
+    .section {
+        height: 100%;
+    }
+}
