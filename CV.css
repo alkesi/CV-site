@@ -1,7 +1,120 @@
-.carousel {
-    height: 100vh !important;
+@font-face {
+    font-family: Spartwell;
+    src: url('Spartwell.otf');
 }
 
-.fixed-action-btn {
-    top: 50% !important;
+@font-face {
+    font-family: 'NotoSans';
+    src: url('NotoSansJP-Light.otf');
+}
+
+@font-face {
+    font-family: LinLibertine;
+    src: url('LinLibertine_R.ttf');
+}
+
+body {
+    background-color: rgb(43, 43, 43);
+    background: linear-gradient(#2b2b2b 35%, #006467 100%);
+    min-height: 100vh;
+    color: rgb(255, 218, 148);
+    font-size: larger;
+}
+
+h1 {
+    font-family: 'Spartwell';
+    font-size: 10vw;
+    text-align: center;
+    color: #f0a248;
+    text-shadow: 2px 2px coral;
+    margin-bottom: 0px;
+}
+
+h2.section {
+    font-family: 'NotoSans';
+    font-size: 3vw;
+    text-align: center;
+    color: #48c9f0;
+}
+
+img {
+    filter: blur(8px);
+}
+
+.headerDividerR {
+    border-left:1px solid #ffffff; 
+    border-right:1px solid #ffffff; 
+    height:100vh;
+    position:absolute;
+    right:300px;
+    top:0px; 
+}
+
+.headerDividerL {
+    border-left:1px solid #ffffff; 
+    border-right:1px solid #ffffff; 
+    height:100vh;
+    position:absolute;
+    left:300px;
+    top:0px; 
+}
+
+.container {
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+.subtext {
+    color: rgb(245, 236, 219);
+    text-align: justify;
+    margin-left: 10vw;
+    font-size: 1.5vw;
+}
+
+.welcome {
+    font-family: 'Spartwell';
+
+}
+.welcome-header {
+    color: #488bf0;
+    text-shadow: 2px 2px coral;
+    text-align: left;
+    font-size: 5vw;
+    margin-bottom: 0px;
+}
+
+.text {
+    font-size: 2vw;
+    color: whitesmoke;
+    margin-bottom: 205px;
+}
+
+.section-header{
+    color: #488bf0;
+    font-family: 'NotoSans';
+}
+
+/*
+.card {
+    float: left;
+    max-width: 200px;
+    background: rgb(223, 223, 223);
+    border: 5px black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 10px black;
+    padding: 10px;
+}*/
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 0px;
+    }
+    h1 {
+        font-size: 20vw;
+    }
+
+    .subtext {
+        font-size: 5vw;
+    }
+
 }
