@@ -25,10 +25,9 @@ body {
     min-height: 100vh;
     color: rgb(255, 218, 148);
     font-size: larger;
-    
 }
 
-img {
+.profile {
     width: 300px;
     float: right;
     border-radius: 50%;
@@ -46,6 +45,7 @@ h1 {
     color: #f0a248;
     text-shadow: 2px 2px coral;
     margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 h2.section {
@@ -107,6 +107,39 @@ h2.section {
 .section-header{
     color: #488bf0;
     font-family: 'NotoSans';
+}
+
+.nav {
+    
+}
+
+.bookmark {
+    float: left;
+    position: relative;
+    margin: 5px;
+    margin-top: 0px;
+    top: -12px;
+    width: 0px;
+    height: 80px;
+    border: solid 30px rgb(165, 34, 177);
+    border-bottom: solid 15px transparent;
+    transition: height 0.5s;
+}
+
+.bookmark:hover {
+    height: 100px;
+}
+
+.bookmark-text {
+    position: absolute;
+    left: -50px;
+    top: 10px;
+    transform: rotate(90deg);
+    font-size: medium;
+    width: 100px;
+    height: 40px;
+    text-decoration: none;
+    color: rgb(255, 218, 148);
 }
 
 /*
