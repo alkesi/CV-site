@@ -23,8 +23,14 @@ body {
     background-color: rgb(43, 43, 43);
     background: linear-gradient(#2b2b2b 35%, #006467 100%);
     min-height: 100vh;
-    color: rgb(255, 218, 148);
+    color: rgb(255, 203, 107);
     font-size: larger;
+    font-family: 'NotoSans';
+}
+
+span {
+    width: 100px !important;
+    height: 75px;
 }
 
 .profile {
@@ -36,6 +42,7 @@ body {
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     margin: 5px;
+    filter: sepia(60%)
 }
 
 h1 {
@@ -54,26 +61,6 @@ h2.section {
     text-align: center;
     color: #48c9f0;
 }
-
-
-.headerDividerR {
-    border-left:1px solid #ffffff; 
-    border-right:1px solid #ffffff; 
-    height:100vh;
-    position:absolute;
-    right:300px;
-    top:0px; 
-}
-
-.headerDividerL {
-    border-left:1px solid #ffffff; 
-    border-right:1px solid #ffffff; 
-    height:100vh;
-    position:absolute;
-    left:300px;
-    top:0px; 
-}
-
 .container {
     margin-left: 20vw;
     margin-right: 20vw;
@@ -104,13 +91,35 @@ h2.section {
     margin-bottom: 205px;
 }
 
+.section {
+    display: block;
+    margin-top: 150px;
+}
+
 .section-header{
     color: #488bf0;
     font-family: 'NotoSans';
 }
 
-.nav {
-    
+.subsection {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 40%;
+    padding: 5%;
+    padding-left: 0%;
+}
+
+.subsection-header {
+    color: rgb(248, 231, 74);
+}
+
+.sml-nxt {
+    margin-bottom: 0px;
+}
+
+.small {
+    margin-bottom: 1em;
+    font-size: smaller;
 }
 
 .bookmark {
@@ -141,17 +150,6 @@ h2.section {
     text-decoration: none;
     color: rgb(255, 218, 148);
 }
-
-/*
-.card {
-    float: left;
-    max-width: 200px;
-    background: rgb(223, 223, 223);
-    border: 5px black;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px 10px black;
-    padding: 10px;
-}*/
 
 @media only screen and (max-width: 600px) {
     .container {
